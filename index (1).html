@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>9X Profit Panel</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+text-align:center;
+}
+
+.dp-box{
+width:190px;
+height:190px;
+margin:auto;
+border-radius:50%;
+padding:8px;
+background:repeating-radial-gradient(circle,#a89b92 0 4px,transparent 5px 13px);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.dp-box img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+}
+
+h1{
+margin-top:25px;
+font-size:20px;
+font-weight:900;
+font-family:Georgia,serif;
+}
+
+.sub{
+margin-top:12px;
+font-size:18px;
+letter-spacing:2px;
+color:#444;
+}
+
+.join-btn{
+margin-top:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+background:#1488ff;
+color:#fff;
+text-decoration:none;
+padding:22px;
+border-radius:50px;
+font-size:20px;
+font-weight:bold;
+box-shadow:0 12px 30px rgba(0,123,255,.35);
+transition:.3s;
+}
+
+.join-btn:hover{
+transform:scale(1.02);
+}
+
+.icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:rgba(255,255,255,.18);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+}
+
+.timer{
+display:flex;
+justify-content:space-between;
+margin-top:45px;
+}
+
+.box{
+flex:1;
+}
+
+.num{
+font-size:56px;
+font-weight:bold;
+color:#b10035;
+}
+
+.label{
+font-size:15px;
+color:#b10035;
+margin-top:5px;
+}
+
+.bottom-img{
+margin-top:70px;
+}
+
+.bottom-img img{
+width:140px;
+opacity:.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="dp-box">
+<img src="https://d1yei2z3i6k35z.cloudfront.net/9021055/6a64e6fa89a0a5.55820957_897.jpg">
+</div>
+
+<h1>9X PROFIT BY SYSTEM BHAI</h1>
+
+<div class="sub">
+VIP PANEL JOIN KARO FAST 🚀
+</div>
+
+<a class="join-btn" href="https://t.me/+MIgPMgEtHCowYzY1">
+<div class="icon">✈️</div>
+JOIN TELEGRAM
+<div class="icon">✈️</div>
+</a>
+
+<div class="timer">
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">DAYS</div>
+</div>
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">HOURS</div>
+</div>
+
+<div class="box">
+<div class="num">00</div>
+<div class="label">MINUTES</div>
+</div>
+
+<div class="box">
+<div class="num" id="sec">55</div>
+<div class="label">SECONDS</div>
+</div>
+
+</div>
+
+<div class="bottom-img">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+</div>
+
+</div>
+
+<script>
+
+let sec=55;
+
+setInterval(function(){
+
+document.getElementById("sec").innerHTML=(sec<10?"0":"")+sec;
+
+sec--;
+
+if(sec<0){
+
+window.location.href="https://t.me/+MIgPMgEtHCowYzY1";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
