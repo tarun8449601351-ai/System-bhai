@@ -6,7 +6,27 @@
 
 <title>9X Profit Panel</title>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1361433842794460');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1361433842794460&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -15,7 +35,7 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#fff;
+background:#ffffff;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -35,7 +55,7 @@ height:190px;
 margin:auto;
 border-radius:50%;
 padding:8px;
-background:repeating-radial-gradient(circle,#a89b92 0 4px,transparent 5px 13px);
+background:repeating-radial-gradient(circle,#9f938c 0 4px,transparent 5px 13px);
 display:flex;
 justify-content:center;
 align-items:center;
@@ -50,9 +70,10 @@ object-fit:cover;
 
 h1{
 margin-top:25px;
-font-size:20px;
+font-size:22px;
 font-weight:900;
 font-family:Georgia,serif;
+color:#111;
 }
 
 .sub{
@@ -64,18 +85,18 @@ color:#444;
 
 .join-btn{
 margin-top:30px;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:20px;
 background:#1488ff;
 color:#fff;
 text-decoration:none;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:18px;
 padding:22px;
 border-radius:50px;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
-box-shadow:0 12px 30px rgba(0,123,255,.35);
+box-shadow:0 10px 25px rgba(20,136,255,.35);
 transition:.3s;
 }
 
@@ -86,8 +107,8 @@ transform:scale(1.02);
 .icon{
 width:42px;
 height:42px;
-border-radius:50%;
 background:rgba(255,255,255,.18);
+border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -97,7 +118,7 @@ font-size:24px;
 .timer{
 display:flex;
 justify-content:space-between;
-margin-top:45px;
+margin-top:50px;
 }
 
 .box{
@@ -107,25 +128,17 @@ flex:1;
 .num{
 font-size:56px;
 font-weight:bold;
-color:#b10035;
+color:#b0003a;
 }
 
 .label{
 font-size:15px;
-color:#b10035;
-margin-top:5px;
-}
-
-.bottom-img{
-margin-top:70px;
-}
-
-.bottom-img img{
-width:140px;
-opacity:.9;
+margin-top:6px;
+color:#b0003a;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -143,9 +156,13 @@ VIP PANEL JOIN KARO FAST 🚀
 </div>
 
 <a class="join-btn" href="https://t.me/+MIgPMgEtHCowYzY1">
+
 <div class="icon">✈️</div>
+
 JOIN TELEGRAM
+
 <div class="icon">✈️</div>
+
 </a>
 
 <div class="timer">
@@ -172,19 +189,16 @@ JOIN TELEGRAM
 
 </div>
 
-<div class="bottom-img">
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
-</div>
-
 </div>
 
 <script>
 
-let sec=55;
+let sec = 55;
 
 setInterval(function(){
 
-document.getElementById("sec").innerHTML=(sec<10?"0":"")+sec;
+document.getElementById("sec").innerHTML =
+(sec<10?"0":"")+sec;
 
 sec--;
 
